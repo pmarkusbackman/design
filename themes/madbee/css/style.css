@@ -15,6 +15,7 @@ ol, ul {
 
 html, body {
     height: 100%;
+    background-color: cadetblue;
 }
 
 /* Placement */
@@ -26,6 +27,11 @@ body {
 
 .main {
     flex: 1 0 auto;
+    padding: 2rem;
+}
+
+.main img {
+    padding: 1em 0em;
 }
 
 .header, .footer {
@@ -42,7 +48,7 @@ body {
 /* Title */
 
 .title, .logo {
-    padding: 3em 3em 3em 0;
+    padding: 3em;
 }
 
 @media (max-width: 767px) {
@@ -58,11 +64,16 @@ body {
 }
 
 .title * {
-    color: #111;
+    color:#444;
 }
 
 .title p {
     font-style: italic;
+}
+
+.logo{
+    width: 10rem;
+    padding: 2em;
 }
 
 /* Footer */
@@ -70,11 +81,13 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #222;
+    background-color: #444;
+    color: orangered;
+    padding: 1rem;
 }
 
 .footer a {
-    color: #222;
+    color: orangered;
 }
 
 .footer .social {
