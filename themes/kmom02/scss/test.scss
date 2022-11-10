@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+$old-fashioned-font: 'Great Vibes', cursive;
+$modern-font: 'Quicksand', sans-serif;
+$worst-ever-font: 'Geostar', cursive;
+$base-line-height: 1.4;
+$base-font-size: 2rem;
+
+@mixin line-height-and-font-size {
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+}
+
+.old-fashioned {
+    @include line-height-and-font-size;
+    font-family: $old-fashioned-font;
+    font-size: $base-font-size * 1.2;
+    letter-spacing: 1px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.modern {
+    @include line-height-and-font-size;
+    font-family: $modern-font;
+    letter-spacing: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Geostar&display=swap');
+.worst-ever {
+    @include line-height-and-font-size;
+    font-family: $worst-ever-font;
+    line-height: 0.7;;
+    letter-spacing: -3px;
+    background-color: darkgray;
+}

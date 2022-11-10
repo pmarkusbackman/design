@@ -1,8 +1,8 @@
 ---
-Logo: assets/img/Sjalvportratt.png
+Logo: assets/img/Sjalvportratt256.png
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/pmarkusbackman/design
-      icon: github
+      icon: fab fa-github
 ---

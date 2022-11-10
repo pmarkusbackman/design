@@ -1,0 +1,42 @@
+/* Header */
+
+.header, .site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Title */
+
+@mixin title-logo-padding {
+    padding: 3em;
+}
+
+.title {
+    @include title-logo-padding;
+
+    * {
+        text-decoration: none;
+    }
+
+    p {
+        font-style: italic;
+    }
+}
+
+.logo{
+    @include title-logo-padding;
+    width: 10rem;
+}
+
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
