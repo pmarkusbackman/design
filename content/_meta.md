@@ -1,8 +1,14 @@
 ---
-Logo: assets/img/Sjalvportratt256.png
+Logo: assets/img/monogram.png
 Tagline: My portfolio.
 Social:
-    - title: Link till sidans github repo.
+    - title: Länk till sidans github repo.
       url: https://github.com/pmarkusbackman/design
-      icon: fab fa-github
+      icon: github
+    - title: Länk till BTH
+      url: https://bth.se
+      icon: bth
+    - title: Länk till dbwebb
+      url: https://dbwebb.se/designv3
+      icon: dbwebb
 ---

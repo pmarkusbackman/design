@@ -7,13 +7,23 @@ body {
 
 .main {
     flex: 1 0 auto;
-    padding: 2rem;
+    padding: 2rem 5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+
+    .me-img {
+        text-align: center;
+    }
+
+    img {
+        padding: 1em 0;
+        max-width: 100%;
+    }
+
+    
 }
 
-.main img {
-    padding: 1em 0em;
-}
-
-.header, .footer {
+.header,
+.footer {
     flex: 0 0 auto;
 }

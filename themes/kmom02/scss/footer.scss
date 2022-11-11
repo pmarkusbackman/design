@@ -3,16 +3,30 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: $background-alternative-color;
-    color: $font-color;
+    align-items: center;
+    margin-top: -20px;
     padding: 1rem;
-
-    a {
-        color: orangered;
-    }
-
-    .social {
-        font-size: 2rem;
-    }
 }
 
+.social {
+    font-size: $base-font-size *2;
+    
+    a {
+        text-decoration: none;
+    }
+
+    .github::before {
+        content: '🙀';
+        font-style: normal;
+    }
+
+    .bth::before {
+        content: '🏫';
+        font-style: normal;
+    }
+
+    .dbwebb::before {
+        content: '🌳';
+        font-style: normal;
+    }
+}
