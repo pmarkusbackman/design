@@ -3,8 +3,8 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: #444;
-    color: orangered;
+    background-color: $background-alternative-color;
+    color: $font-color;
     padding: 1rem;
 
     a {

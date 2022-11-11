@@ -6,19 +6,15 @@
 .nav ul {
     display: flex;
     justify-content: flex-end;
-    padding: 1em 0;
     list-style: none;
 }
 
 .nav ul li {
-    padding: 0 1em;
-}
-
-.nav a, .nav-toggle {
-    color: #333;
+    padding: 0 2em;
 }
 
 .nav-toggle {
+    color: $font-color;
     display: none;
 }
 

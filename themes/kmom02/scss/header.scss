@@ -1,38 +1,56 @@
 /* Header */
 
-.header, .site-header {
+$top-padding: 2rem;
+
+.header {
     display: flex;
     justify-content: space-between;
-}
+    padding: 0 1rem;
+    height: 200px;
+    background-color: $background-alternative-color;
 
-/* Title */
-
-@mixin title-logo-padding {
-    padding: 3em;
-}
-
-.title {
-    @include title-logo-padding;
-
-    * {
+    a {
         text-decoration: none;
+        color: $font-color;
     }
 
-    p {
-        font-style: italic;
+    .site-header {
+        display: flex;
+        align-items: stretch;
+
+        .logo img{
+            height: 100%;
+            padding: 1em 0;
+        }
+
+        .title {
+            a {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: $top-padding 0;
+
+                h1, p {
+                    margin: 0;
+                }
+            }
+
+            p {
+                font-style: italic;
+            }
+        }
+    }
+
+    .nav {
+        padding-top: $top-padding;
+        text-decoration: none;
+
     }
 }
-
-.logo{
-    @include title-logo-padding;
-    width: 10rem;
-}
-
 
 @media (max-width: 767px) {
-    .title, .logo {
-        padding: 1em 1em 1em 0;
-    }
     .title {
         min-width: 50%;
     }
