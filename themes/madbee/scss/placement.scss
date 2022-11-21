@@ -1,5 +1,8 @@
 /* Placement */
 
+$main-width: 960px;
+$main-side-padding: 90px;
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,8 +10,8 @@ body {
 
 .main {
     flex: 1 0 auto;
-    padding: 2rem 5rem;
-    max-width: 70rem;
+    padding: 2rem $main-side-padding;
+    max-width: $main-width + ($main-side-padding * 2);
     margin: 0 auto;
 
     .me-img {
@@ -19,8 +22,6 @@ body {
         padding: 1em 0;
         max-width: 100%;
     }
-
-    
 }
 
 .header,
